@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link href="./main.css" rel="stylesheet" type="text/css"/>
+    <title>Hello World!</title>
+</head>
+<body>
+
+<div class="container">
+    <input placeholder="Введите первое число" type="number" id="first" class='input'/>
+    <input placeholder="Введите второе число" type="number" id="second" class='input'/>
+</div>
+
+<button id="getResult">Подсчитать</button>
+
+<p>Результат: <span id="result"></span></p>
+
+<script src="./renderer.js"></script>
+</body>
+</html>
